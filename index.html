@@ -41,10 +41,6 @@
 
   /* hero */
   header.hero { padding: 88px 0 72px; }
-  .tag {
-    display: inline-block; background: var(--accent-light); color: var(--accent);
-    font-size: 13px; padding: 4px 12px; border-radius: 999px; margin-bottom: 20px; font-weight: 600;
-  }
   h1 { font-size: 40px; line-height: 1.25; font-weight: 800; letter-spacing: .5px; }
   h1 em { font-style: normal; color: var(--accent); }
   .hero .elevator { margin-top: 16px; font-size: 15px; color: var(--accent); font-weight: 600; }
@@ -75,20 +71,12 @@
 
   /* why · three steps */
   .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
-  .step { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
-  .step .num { font-size: 13px; font-weight: 800; color: var(--accent); letter-spacing: 1px; }
-  .step h3 { font-size: 17px; margin: 8px 0 6px; }
-  .step p { font-size: 14px; color: var(--ink-soft); }
+  .step { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; font-size: 15px; color: var(--ink-soft); }
 
   /* services detail */
-  .svc-detail { margin-top: 40px; display: grid; gap: 24px; }
+  .svc-detail { display: grid; gap: 24px; }
   .svc-block { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 28px; }
   .svc-block h3 { font-size: 18px; margin-bottom: 4px; }
-  .svc-block .main-dish {
-    display: inline-block; background: var(--accent-light); color: var(--accent);
-    font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 999px;
-    margin-left: 8px; vertical-align: middle;
-  }
   .svc-block .fit { font-size: 13.5px; color: var(--accent); font-weight: 600; margin-bottom: 14px; }
   .svc-block ul { list-style: none; }
   .svc-block li { padding: 6px 0 6px 24px; position: relative; font-size: 14.5px; color: var(--ink-soft); }
@@ -98,18 +86,18 @@
   /* cases */
   .cases-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
   .case-card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 26px; }
-  .case-card .ctag { font-size: 12.5px; font-weight: 700; color: var(--accent); letter-spacing: 1px; }
-  .case-card h3 { font-size: 18px; margin: 8px 0 16px; }
+  .case-card h3 { font-size: 18px; margin-bottom: 16px; }
   .case-field { display: flex; gap: 12px; padding: 9px 0; border-bottom: 1px dashed var(--line); font-size: 14px; }
   .case-field:last-of-type { border-bottom: none; }
   .case-field b { flex: 0 0 100px; color: var(--ink); }
-  .case-field .todo { color: #9aa5b1; font-style: italic; }
-  .cases-note { margin-top: 22px; text-align: center; font-size: 14px; color: #7b8794; }
+  .case-field span { color: #7b8794; }
 
   /* beauty */
   .card ul.mini { list-style: none; margin-top: 12px; }
   .card ul.mini li { padding: 4px 0 4px 20px; position: relative; font-size: 13.5px; color: var(--ink-soft); }
   .card ul.mini li::before { content: "·"; position: absolute; left: 6px; color: var(--accent); font-weight: 800; }
+  .beauty-lead { color: var(--ink-soft); margin: -14px 0 28px; font-size: 15.5px; }
+  .beauty-tail { margin-top: 22px; font-size: 15.5px; color: var(--ink); font-weight: 600; }
   .beauty-note { margin-top: 22px; font-size: 13.5px; color: #7b8794; background: #f1f5f4; border-left: 3px solid var(--accent); padding: 12px 16px; border-radius: 0 10px 10px 0; }
 
   /* about */
@@ -123,14 +111,6 @@
   .about .photo img { display: block; width: 100%; height: auto; }
   .about .text { flex: 1 1 420px; }
   .about .text p { margin-bottom: 13px; color: var(--ink-soft); font-size: 15px; }
-  .about .text strong { color: var(--ink); }
-  .facts { flex: 0 1 250px; display: flex; flex-direction: column; gap: 14px; }
-  .fact {
-    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
-    padding: 16px 20px; display: flex; align-items: baseline; gap: 10px;
-  }
-  .fact b { font-size: 24px; color: var(--accent); }
-  .fact span { font-size: 13.5px; color: var(--ink-soft); }
 
   /* edge */
   .edge-list { display: grid; gap: 16px; }
@@ -140,7 +120,7 @@
 
   /* voices */
   .voices blockquote { border-left: 3px solid var(--accent); background: #f1f5f4; padding: 12px 18px; border-radius: 0 10px 10px 0; margin: 0 0 12px; color: var(--ink); font-size: 15px; max-width: 720px; }
-  .voices blockquote.todo-quote { border-left-color: #cbd2d9; color: #9aa5b1; font-style: italic; }
+  .voices blockquote.todo-quote { border-left-color: #cbd2d9; color: #7b8794; }
 
   /* workshops */
   .ws-hero {
@@ -153,7 +133,6 @@
   }
   .ws-hero h3 { font-size: 21px; margin-bottom: 14px; }
   .ws-meta-top { display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 14.5px; color: var(--ink); padding-bottom: 16px; border-bottom: 1px dashed var(--line); }
-  .ws-meta-top b { color: var(--accent); }
   .ws-hero .hookline { font-size: 15.5px; color: var(--accent); font-weight: 600; margin: 16px 0; }
   .ws-take { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 18px; }
   .ws-take .item { background: #f1f5f4; border-radius: 10px; padding: 14px 16px; }
@@ -167,7 +146,6 @@
   .ws-item .date { font-size: 13px; font-weight: 800; color: var(--accent); letter-spacing: 1px; }
   .ws-item h3 { font-size: 16.5px; margin: 8px 0 6px; }
   .ws-item p { font-size: 13.5px; color: var(--ink-soft); }
-  .ws-item .status { display: inline-block; margin-top: 12px; font-size: 12.5px; font-weight: 700; padding: 3px 10px; border-radius: 999px; background: #f1f5f4; color: var(--ink-soft); }
 
   /* faq */
   details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 22px; margin-bottom: 12px; }
@@ -179,7 +157,7 @@
     background: linear-gradient(135deg, #0f766e, #115e59);
     color: #fff; border-radius: 18px; padding: 48px 36px; text-align: center;
   }
-  .contact-box h2 { color: #fff; }
+  .contact-box h2 { color: #fff; font-size: 24px; margin-bottom: 10px; }
   .contact-box p { color: rgba(255,255,255,.85); max-width: 520px; margin: 0 auto 24px; font-size: 15.5px; }
   .contact-box .qr-card {
     display: inline-block; background: #fff; padding: 12px; border-radius: 14px;
@@ -219,7 +197,6 @@
 
 <header class="hero" id="top">
   <div class="wrap">
-    <span class="tag">AI 实战培训 · 课程开发 · 企业落地</span>
     <h1>别只收藏 AI 教程，<br>今天就能<em>动手用起来</em>。</h1>
     <p class="elevator">美惠 · AI 落地实操教练｜做过 12 年企业培训，也自己开过店</p>
     <p class="sub">我是美惠。12 年企业一线培训，自己开过店、做过厂。我帮你把 AI 变成团队每天真在用的工具——不讲玄乎概念，只给能上手的做法。</p>
@@ -234,21 +211,9 @@
     <div class="kicker">WHY ME</div>
     <h2>为什么要找我</h2>
     <div class="steps">
-      <div class="step">
-        <div class="num">第 1 步</div>
-        <h3>做出效果</h3>
-        <p>AI 真的用起来了，动作执行了。</p>
-      </div>
-      <div class="step">
-        <div class="num">第 2 步</div>
-        <h3>做出成绩</h3>
-        <p>有可量化的结果，效率提升、成本下降。</p>
-      </div>
-      <div class="step">
-        <div class="num">第 3 步</div>
-        <h3>赚到钱</h3>
-        <p>和收入挂钩，多出单、多获客、多成交。</p>
-      </div>
+      <div class="step">第一步，做出效果。AI 真的用起来了，动作执行了。</div>
+      <div class="step">第二步，做出成绩。有可量化的结果，效率提升、成本下降。</div>
+      <div class="step">第三步，赚到钱。和收入挂钩，多出单、多获客、多成交。</div>
     </div>
     <div class="section-note">AI 不是用来学的，是用来做出结果的。学了一堆工具没用，能出单、能省钱、能赚钱，才算数。</div>
   </div>
@@ -258,27 +223,9 @@
   <div class="wrap">
     <div class="kicker">SERVICES</div>
     <h2>我能做什么</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="ico">🏢</div>
-        <h3>企业 AI 落地陪跑</h3>
-        <p>从选场景到定流程，陪你的团队把 AI 嵌进真实业务。动作、产出物、节奏，一步一步给到位，不交演示壳子。</p>
-      </div>
-      <div class="card">
-        <div class="ico">📚</div>
-        <h3>AI 实战课程与工作坊</h3>
-        <p>面向职场进阶者的课程：专业、好懂、好落地。每一节听完，当天就能在工作里用上。</p>
-      </div>
-      <div class="card">
-        <div class="ico">✍️</div>
-        <h3>内容创作提效</h3>
-        <p>帮你用 AI 搭起自己的内容流水线：选题、初稿、排版、分发。产量提上去，声音还是你自己的。</p>
-      </div>
-    </div>
-
     <div class="svc-detail">
       <div class="svc-block">
-        <h3>🏢 企业 AI 落地陪跑 <span class="main-dish">主菜</span></h3>
+        <h3>🏢 企业 AI 落地陪跑（主菜）</h3>
         <div class="fit">适合：知道该用 AI、但不知道从哪下手的企业主和部门负责人</div>
         <ul>
           <li>一起选出 1-3 个真场景——别贪多，先把最烦的活儿拆掉</li>
@@ -318,23 +265,20 @@
     <h2>我做成了什么</h2>
     <div class="cases-grid">
       <div class="case-card">
-        <div class="ctag">案例一</div>
-        <h3>美业门店</h3>
-        <div class="case-field"><b>客户是谁</b><span class="todo">待补：门店类型、规模</span></div>
-        <div class="case-field"><b>卡在哪</b><span class="todo">待补：当时最堵的那个环节</span></div>
-        <div class="case-field"><b>用了哪几个动作</b><span class="todo">待补：选了哪几个场景、怎么拆的</span></div>
-        <div class="case-field"><b>结果</b><span class="todo">待补：尽量用数字——回访率、复购、内容产出量</span></div>
+        <h3>案例一 · 美业门店</h3>
+        <div class="case-field"><b>客户是谁</b><span>【待你补充】</span></div>
+        <div class="case-field"><b>卡在哪</b><span>【待你补充】</span></div>
+        <div class="case-field"><b>用了哪几个动作</b><span>【待你补充】</span></div>
+        <div class="case-field"><b>结果</b><span>【待你补充，尽量用数字：如回访率、复购、内容产出量】</span></div>
       </div>
       <div class="case-card">
-        <div class="ctag">案例二</div>
-        <h3>传统制造企业电商转型</h3>
-        <div class="case-field"><b>客户是谁</b><span class="todo">待补：什么厂、多大规模</span></div>
-        <div class="case-field"><b>卡在哪</b><span class="todo">待补：转型时最卡的那一步</span></div>
-        <div class="case-field"><b>用了哪几个动作</b><span class="todo">待补：陪跑里做了哪几件事</span></div>
-        <div class="case-field"><b>结果</b><span class="todo">待补：尽量用数字——询单量、成交额、上架效率</span></div>
+        <h3>案例二 · 传统制造企业电商转型</h3>
+        <div class="case-field"><b>客户是谁</b><span>【待你补充】</span></div>
+        <div class="case-field"><b>卡在哪</b><span>【待你补充】</span></div>
+        <div class="case-field"><b>用了哪几个动作</b><span>【待你补充】</span></div>
+        <div class="case-field"><b>结果</b><span>【待你补充，尽量用数字：如询单量、成交额、上架效率】</span></div>
       </div>
     </div>
-    <div class="cases-note">想看某个场景具体怎么拆的，加微信我发你细节。</div>
   </div>
 </section>
 
@@ -342,7 +286,7 @@
   <div class="wrap">
     <div class="kicker">BEAUTY INDUSTRY</div>
     <h2>美业 · 换个行业一样跑</h2>
-    <p style="color:var(--ink-soft);margin:-14px 0 28px;font-size:15.5px;">美业是我待了 12 年的地方，先拿它打样。下面这套拆法不挑行业——开店、开公司、职场打工，道理都一样：把每天最耗人的活儿交给工具。</p>
+    <p class="beauty-lead">美业是我待了 12 年的地方，先拿它打样。下面这套拆法不挑行业——开店、开公司、职场打工，道理都一样：把每天最耗人的活儿交给工具。</p>
     <div class="grid">
       <div class="card">
         <div class="ico">🌸</div>
@@ -385,7 +329,7 @@
         </ul>
       </div>
     </div>
-    <p style="margin-top:22px;font-size:15.5px;color:var(--ink);font-weight:600;">你的行业怎么拆？进来聊，我现场给你拆一步。</p>
+    <p class="beauty-tail">你的行业怎么拆？进来聊，我现场给你拆一步。</p>
     <div class="beauty-note">说明：这里只聊怎么用 AI 把活儿干快，不聊「该怎么护理、该怎么吃」——专业的事，请听持证专业人士的。</div>
   </div>
 </section>
@@ -397,18 +341,13 @@
     <div class="about">
       <div class="photo"><img src="meihui.jpg" alt="美惠"></div>
       <div class="text">
-        <p><strong>我是美惠，一个坚持「能上手才算学会」的 AI 实战教练。</strong></p>
-        <p>我做过厂家，自己开过店，做过老板。所以我知道经营的压力，知道老板怕什么。</p>
-        <p><strong>老板怕的不是 AI 难，是员工学不会、推不动、没效果、白花钱。这个压力我自己扛过。</strong></p>
+        <p>我是美惠，一个坚持「能上手才算学会」的 AI 实战教练。</p>
+        <p>我做过厂家，自己开过店，做过老板。 所以我知道经营的压力，知道老板怕什么。</p>
+        <p>老板怕的不是 AI 难，是员工学不会、推不动、没效果、白花钱。这个压力我自己扛过。</p>
         <p>12 年企业一线培训，覆盖美业、制造、个人 IP 3 个以上行业；陪跑过传统制造企业做电商转型；办过线下 AI 工作坊，服务过 100+ 学员。</p>
         <p>养生、美容、减肥这些事，我有大量实战经验，从带教一路走过来，现在做的是 AI 落地陪跑。</p>
-        <p><strong>这说明一件事：我不只在美业能干，换个行业我也能听懂你的生意。</strong></p>
+        <p>这说明一件事：我不只在美业能干，换个行业我也能听懂你的生意。</p>
         <p>工作之外，我是个拆书家——把厚书拆薄、把方法拆细，这个习惯也长在了我的课程里。</p>
-      </div>
-      <div class="facts">
-        <div class="fact"><b>12 年</b><span>企业一线培训</span></div>
-        <div class="fact"><b>100+</b><span>线下工作坊学员</span></div>
-        <div class="fact"><b>3 个</b><span>以上行业覆盖</span></div>
       </div>
     </div>
   </div>
@@ -442,7 +381,7 @@
     <blockquote>「别的老师只会让他点头，你会引导我思考，还让我做出来。」</blockquote>
     <blockquote>「你太实在了，全场都在倒干货。」</blockquote>
     <blockquote>「学之前我以为自己用 AI 能打 7 分，学完才发现只能打 3 分——校准完才知道往哪使劲。」</blockquote>
-    <blockquote class="todo-quote">企业客户反馈（待补一条 B 端客户原话）</blockquote>
+    <blockquote class="todo-quote">企业客户：「【待你补充】」</blockquote>
   </div>
 </section>
 
@@ -450,15 +389,15 @@
   <div class="wrap">
     <div class="kicker">WORKSHOPS</div>
     <h2>线下工作坊 · 排期</h2>
-    <p style="color:var(--ink-soft);margin:-14px 0 28px;font-size:15.5px;">不是听讲座。带着你的活儿来，现场做，做完带走能用的东西。</p>
+    <p class="beauty-lead">不是听讲座。带着你的活儿来，现场做，做完带走能用的东西。</p>
 
     <div class="ws-hero">
       <span class="badge">报名中 · 限 15 人</span>
       <h3>AI 内容启动工作坊 · 第一期</h3>
       <div class="ws-meta-top">
-        <span>⏰ 11 月 15 日（周六）14:30–17:00</span>
+        <span>11 月 15 日（周六）14:30–17:00</span>
         <span>📍 广州市天河区越星路 174 号</span>
-        <span>💰 <b>39 元/人</b></span>
+        <span>💰 39 元/人</span>
       </div>
       <div class="hookline">从「不知道写什么」到「一条能发的内容」，现场跑通。你带着一个模糊的念头来，走的时候带走：</div>
       <div class="ws-take">
@@ -468,7 +407,7 @@
         <div class="item"><b>素材库起点</b><span>今天挖出的细节，是你未来 30 条内容的弹药</span></div>
       </div>
       <div class="ws-who">适合：想做自媒体但不知道写什么；写了发不出去、总觉得没料；用了 AI、一眼 AI 味；有真实经历但不会变成内容的人。<span class="no">不适合：只想听别人讲、不想动笔的人。</span></div>
-      <a class="btn btn-primary" href="#contact">扫码加微信，备注「工作坊」占位 →</a>
+      <a class="btn btn-primary" href="#contact">→ 扫码加微信，备注「工作坊」占位</a>
     </div>
 
     <div class="ws-list">
@@ -480,12 +419,10 @@
       <div class="ws-item">
         <div class="date">12 月 6 日（周六）· 预告</div>
         <h3>AI 自动流水线工作坊</h3>
-        <span class="status">待开放报名</span>
       </div>
       <div class="ws-item">
         <div class="date">12 月 24 日（周三）· 预告</div>
         <h3>视频启动工作坊</h3>
-        <span class="status">待开放报名</span>
       </div>
     </div>
   </div>
@@ -509,11 +446,11 @@
     </details>
     <details>
       <summary>企业落地大概要多久？</summary>
-      <p>先选 1-3 个场景做试点，通常 3 个月以上。</p>
+      <p>先选 1-3 个场景做试点，通常【3个月以上】。</p>
     </details>
     <details>
       <summary>费用怎么算？</summary>
-      <p>企业陪跑按项目报价，起步 3000 元。</p>
+      <p>企业陪跑按项目报价，起步【3000起】。</p>
     </details>
   </div>
 </section>
@@ -521,15 +458,15 @@
 <section id="contact">
   <div class="wrap">
     <div class="contact-box">
-      <h2>不确定 AI 能帮上你什么？</h2>
-      <p>加我微信，说一句你团队最卡的那一步。我告诉你，明天能用 AI 做什么。</p>
+      <h2>加我微信，说一句你团队最卡的那一步。</h2>
+      <p>我告诉你，明天能用 AI 做什么。</p>
       <div class="qr-card"><img src="wechat-qr.jpg" alt="美惠的微信二维码"></div>
-      <div class="qr-tip">扫码加我微信，备注「AI」优先通过</div>
+      <div class="qr-tip">扫码加微信</div>
     </div>
     <div class="side-channels">
-      其他阵地：公众号 rosey的ai实战笔记 ·
+      公众号：rosey的ai实战笔记<br>
       <a href="https://xhslink.cn/o/FIBM5DK34c" target="_blank" rel="noopener">小红书</a> /
-      <a href="https://www.zhihu.com/search?q=%E7%BE%8E%E6%83%A0ai%E8%90%BD%E5%9C%B0">知乎</a>：美惠ai落地 ·
+      <a href="https://www.zhihu.com/search?q=%E7%BE%8E%E6%83%A0ai%E8%90%BD%E5%9C%B0">知乎</a>：美惠ai落地<br>
       <a href="https://t.zsxq.com/yjit6" target="_blank" rel="noopener">知识星球：美惠AI实战资产库</a>
     </div>
   </div>
