@@ -118,6 +118,35 @@
   .card ul.mini li::before { content: "·"; position: absolute; left: 6px; color: var(--accent); font-weight: 800; }
   .beauty-note { margin-top: 22px; font-size: 13.5px; color: #7b8794; background: #f1f5f4; border-left: 3px solid var(--accent); padding: 12px 16px; border-radius: 0 10px 10px 0; }
 
+  /* workshops */
+  .ws-hero {
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+    padding: 30px 28px; margin-bottom: 24px;
+  }
+  .ws-hero .badge {
+    display: inline-block; background: var(--accent); color: #fff; font-size: 12.5px;
+    font-weight: 700; padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  .ws-hero h3 { font-size: 21px; margin-bottom: 6px; }
+  .ws-hero .hookline { font-size: 15.5px; color: var(--accent); font-weight: 600; margin-bottom: 16px; }
+  .ws-hero p.desc { font-size: 14.5px; color: var(--ink-soft); margin-bottom: 18px; }
+  .ws-take { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 18px; }
+  .ws-take .item { background: #f1f5f4; border-radius: 10px; padding: 14px 16px; }
+  .ws-take .item b { display: block; font-size: 14px; color: var(--ink); margin-bottom: 4px; }
+  .ws-take .item span { font-size: 13px; color: var(--ink-soft); }
+  .ws-meta { display: flex; flex-wrap: wrap; gap: 10px 22px; padding-top: 14px; border-top: 1px dashed var(--line); font-size: 14px; color: var(--ink); }
+  .ws-meta b { color: var(--accent); }
+  .ws-who { margin-top: 14px; font-size: 13.5px; color: var(--ink-soft); }
+  .ws-who .no { color: #9aa5b1; }
+  .ws-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+  .ws-item { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+  .ws-item .date { font-size: 13px; font-weight: 800; color: var(--accent); letter-spacing: 1px; }
+  .ws-item h3 { font-size: 16.5px; margin: 8px 0 6px; }
+  .ws-item p { font-size: 13.5px; color: var(--ink-soft); }
+  .ws-item .status { display: inline-block; margin-top: 12px; font-size: 12.5px; font-weight: 700; padding: 3px 10px; border-radius: 999px; }
+  .ws-item .status.open { background: var(--accent-light); color: var(--accent); }
+  .ws-item .status.soon { background: #f1f5f4; color: var(--ink-soft); }
+
   /* ecosystem */
   .eco-step { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
   .eco-step .num { font-size: 13px; font-weight: 800; color: var(--accent); letter-spacing: 1px; }
@@ -174,6 +203,7 @@
     <a class="brand" href="#top">美惠<span>.</span></a>
     <ul>
       <li><a class="link" href="#services">我能做什么</a></li>
+      <li><a class="link" href="#workshops">工作坊</a></li>
       <li><a class="link" href="#story">为什么是我</a></li>
       <li><a class="link" href="#beauty">美业</a></li>
       <li><a class="link" href="#channels">内容阵地</a></li>
@@ -248,6 +278,55 @@
           <li>最后上排期表：哪天发什么，一眼看清</li>
         </ul>
         <div class="bottom-line">产量提上去，声音还是你自己的。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="workshops">
+  <div class="wrap">
+    <div class="kicker">WORKSHOPS</div>
+    <h2>线下工作坊 · 排期</h2>
+    <p style="color:var(--ink-soft);margin:-14px 0 28px;font-size:15.5px;">不是听讲座。带着你的活儿来，现场做，做完带走能用的东西。</p>
+
+    <div class="ws-hero">
+      <span class="badge">报名中 · 限 15 人</span>
+      <h3>AI 内容启动工作坊 · 第一期</h3>
+      <div class="hookline">从「不知道写什么」到「一条能发的内容」，现场跑通</div>
+      <p class="desc">这不是听讲座，这是一场 100 分钟的内容生产实操。你带着一个模糊的念头来，走的时候带走一条能发的内容，和一套以后随时能用的采访式内容挖掘法。</p>
+      <div class="ws-take">
+        <div class="item"><b>一套方法</b><span>采访式内容挖掘法——把「我经历过的事」挖成「别人愿意看的内容」</span></div>
+        <div class="item"><b>一条成品</b><span>现场完成从种子 → 采访 → 整理 → 去 AI 味 → 成稿的全流程</span></div>
+        <div class="item"><b>一张卡片</b><span>正反两面提示词卡，回家就能自己跑</span></div>
+        <div class="item"><b>素材库起点</b><span>今天挖出来的细节，存下来就是你未来 30 条内容的弹药</span></div>
+      </div>
+      <div class="ws-who">适合：想做自媒体但不知道写什么的人；写了发不出去、总觉得没料没亮点的人；用了 AI、写出来一眼 AI 味的人；有真实经历和故事、但不会变成内容的人。<span class="no">不适合：只想听别人讲、不想动笔的人。</span></div>
+      <div class="ws-meta">
+        <span>⏰ 时间：<b>11 月 15 日（周六）14:30–17:00</b></span>
+        <span>📍 地点：<b>广州市天河区越星路 174 号</b></span>
+        <span>💰 费用：<b>39 元/人</b>，限 15 人，名额报满即止</span>
+      </div>
+      <p style="margin-top:18px;"><a class="btn btn-primary" href="#contact">扫码加微信，备注「工作坊」占位</a></p>
+    </div>
+
+    <div class="ws-list">
+      <div class="ws-item">
+        <div class="date">11 月 29 日 · 周六</div>
+        <h3>AI 内容启动工作坊 · 第二期</h3>
+        <p>第一期同款内容生产实操，一期没赶上的，这期补上。</p>
+        <span class="status soon">预告 · 待开放报名</span>
+      </div>
+      <div class="ws-item">
+        <div class="date">12 月 6 日 · 周六</div>
+        <h3>AI 自动流水线工作坊</h3>
+        <p>把选题、初稿、排版、分发串成一条线，让你的内容自己往前走。</p>
+        <span class="status soon">预告 · 待开放报名</span>
+      </div>
+      <div class="ws-item">
+        <div class="date">12 月 24 日 · 周三</div>
+        <h3>视频启动工作坊</h3>
+        <p>从会写到敢拍：现场跑通你的第一条 AI 辅助视频。</p>
+        <span class="status soon">预告 · 待开放报名</span>
       </div>
     </div>
   </div>
