@@ -107,6 +107,10 @@
   .story p strong { color: var(--ink); }
   .story .act { margin-top: 26px; font-size: 13px; font-weight: 800; color: var(--accent); letter-spacing: 1.5px; margin-bottom: 10px; }
   .story .act:first-of-type { margin-top: 0; }
+  .story ul.hook { list-style: none; max-width: 720px; margin-bottom: 14px; }
+  .story ul.hook li { padding: 8px 0 8px 26px; position: relative; font-size: 15.5px; color: var(--ink-soft); border-bottom: 1px dashed var(--line); }
+  .story ul.hook li::before { content: "·"; position: absolute; left: 8px; color: var(--accent); font-weight: 800; }
+  .story blockquote { border-left: 3px solid var(--accent); background: #f1f5f4; padding: 12px 18px; border-radius: 0 10px 10px 0; margin: 0 0 12px; color: var(--ink); font-size: 15px; max-width: 720px; }
 
   /* beauty section */
   .card ul.mini { list-style: none; margin-top: 12px; }
@@ -170,7 +174,7 @@
     <a class="brand" href="#top">美惠<span>.</span></a>
     <ul>
       <li><a class="link" href="#services">我能做什么</a></li>
-      <li><a class="link" href="#story">我的路</a></li>
+      <li><a class="link" href="#story">为什么是我</a></li>
       <li><a class="link" href="#beauty">美业</a></li>
       <li><a class="link" href="#channels">内容阵地</a></li>
       <li><a class="link" href="#faq">常见问题</a></li>
@@ -272,23 +276,61 @@
 
 <section id="story" class="story">
   <div class="wrap">
-    <div class="kicker">MY STORY</div>
-    <h2>我怎么走到这儿</h2>
+    <div class="kicker">WHY ME</div>
+    <h2>为什么是我</h2>
 
-    <div class="act">第一幕 · 美容床边的平凡世界</div>
-    <p>我的故事从美容床边开始。美业 12 年，做过厂家，自己开过店。基层美容师的苦，我懂——那些床是我自己一单一单干过来的；当老板的不易，我也懂——房租、货、人，哪一样都躲不掉。</p>
+    <div class="act">一、你是不是也这样</div>
+    <ul class="hook">
+      <li>知道 AI 有用，但不知道从哪下手。</li>
+      <li>买了 AI 课，听完还是不会用。</li>
+      <li>员工学了 AI，跟店里的事接不上。</li>
+      <li>培训完没个 SOP，人一走就断档。</li>
+      <li>AI 听着热闹，落到店里就卡住。</li>
+    </ul>
+    <p><strong>你要是点头了，那我们就往下聊。</strong></p>
 
-    <div class="act">第二幕 · 召唤：人比手艺更难</div>
-    <p>干得越久越看清一件事：这行最难的不是手艺，是人。技师累，客人心里悬着，老板自己硬扛。养生、美容、减肥这些领域，我攒下了大量一线的实战经验，但一直有个结没解开：<strong>好方法怎么才能让更多人用上，又不把人累垮？</strong></p>
-    <p>为了解开这个结，我给自己起了个名字：身心滋养架构师。把「滋养」拆成能落地的日常，而不是一句口号。</p>
+    <div class="act">二、我不是科技圈讲师</div>
+    <p>先说清楚我不是谁。</p>
+    <p>我不是纯科技圈那种 AI 讲师。不是只讲工具功能的培训师。也不是纸上谈兵的理论派。</p>
+    <p>我做过厂家。自己开过店，做过老板。</p>
+    <p>所以我知道经营的压力，知道老板怕什么。</p>
+    <p><strong>老板怕的不是 AI 难。是员工学不会、推不动、没效果、白花钱。</strong></p>
+    <p>你知道吗，我自己扛过这个。养生、美容、减肥这些事，我有大量实战经验。从带教一路走过来，现在做的是赋能。</p>
+    <p>12 年企业一线培训，覆盖美业、制造、个人 IP 3 个以上行业。</p>
+    <p>陪跑过传统制造企业做电商转型。也办了线下 AI 工作坊，服务过 100 多学员。</p>
+    <p><strong>这说明一件事：我不只在美业能干，换个行业我也能听懂你的生意。</strong></p>
 
-    <div class="act">第三幕 · 试炼：拆书遇上 AI</div>
-    <p>为了把方法讲明白，我加入拆书帮，成了拆书家。把厚书拆薄，把方法拆细。拆着拆着发现：讲课、干活、带团队，底层是同一件事——<strong>会拆步骤。</strong></p>
-    <p>然后 AI 来了。我拿自己的日常工作当试验田，一个环节一个环节地试。试出来的结论很朴素：<strong>AI 放大的，正是会拆步骤的人。</strong></p>
+    <div class="act">三、学员怎么说</div>
+    <p>我不太想自己说自己好。听学员的。</p>
+    <blockquote>「别的老师只会让他点头，你会引导我思考，还让我做出来。」</blockquote>
+    <blockquote>「学之前我以为自己用 AI 能打 7 分，学完才发现只能打 3 分。」</blockquote>
+    <blockquote>「你太实在了，全场都在倒干货。」</blockquote>
+    <p>从 7 分到 3 分，不是退步，是认知校准。</p>
+    <p>校准完了，下一步才知道往哪使劲。</p>
 
-    <div class="act">第四幕 · 带宝物归来</div>
-    <p>现在，我把 12 年美业、拆书、AI 三样东西拧在一起，教和我一样从基层走出来的人。教你的不是 AI，是拆——把你的活儿拆成一步一格的清单，AI 自然有它的位置。</p>
-    <p>这算英雄之旅吗？不算，没那么传奇。<strong>只是一个走了 12 年的人，把路上的坑画成了地图，让你少绕几步。</strong></p>
+    <div class="act">四、我和别人不一样在哪</div>
+    <p><strong>第一个，我不打技术牌，我打经营牌。</strong></p>
+    <p>我不是教你怎么用 AI。我是帮你团队把 AI 用起来，变成每天能执行的动作。</p>
+    <p><strong>第二个，我不只做课程，我做陪跑。</strong></p>
+    <p>课程是一次性的。陪跑是长期的。做完必复盘，我不包办，也不放任。</p>
+    <p><strong>第三个，我不做通用 AI，我做行业 AI 落地。</strong></p>
+    <p>行业越具体，落地越有效。美业重服务、重话术。制造业重效率、重批量。拿同一套模板套所有行业，落不了地。</p>
+    <p>我的服务分三步走：</p>
+    <ul class="hook">
+      <li>第一步，做出效果。AI 真的用起来了，动作执行了。</li>
+      <li>第二步，做出成绩。有可量化的结果，效率提升、成本下降。</li>
+      <li>第三步，赚到钱。直接和收入挂钩，多出单、多获客、多成交。</li>
+    </ul>
+    <p><strong>我常说一句话：AI 不是用来学的，是用来做出结果的。</strong></p>
+    <p>学了一堆工具没用。能出单、能省钱、能赚钱，才算数。</p>
+
+    <div class="act">五、下一步</div>
+    <p>你要是也想把 AI 用起来，别一个人在那琢磨。</p>
+    <p>搞不定就问 AI。搞不定我，也可以问我。</p>
+    <p>你先跟我说一句最实在的：<strong>你、你团队里，最卡的那一步是什么？</strong></p>
+    <p>我告诉你，明天能用 AI 做什么。</p>
+    <p>从这一步开始。</p>
+    <p style="margin-top:22px;"><a class="btn btn-primary" href="#contact">说说你最卡的那一步</a></p>
   </div>
 </section>
 
