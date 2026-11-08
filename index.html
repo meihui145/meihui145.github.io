@@ -92,6 +92,32 @@
   .fact b { font-size: 24px; color: var(--accent); }
   .fact span { font-size: 13.5px; color: var(--ink-soft); }
 
+  /* services detail */
+  .svc-detail { margin-top: 40px; display: grid; gap: 24px; }
+  .svc-block { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 28px; }
+  .svc-block h3 { font-size: 18px; margin-bottom: 4px; }
+  .svc-block .fit { font-size: 13.5px; color: var(--accent); font-weight: 600; margin-bottom: 14px; }
+  .svc-block ul { list-style: none; }
+  .svc-block li { padding: 6px 0 6px 24px; position: relative; font-size: 14.5px; color: var(--ink-soft); }
+  .svc-block li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  .svc-block .bottom-line { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--line); font-size: 14px; font-weight: 600; color: var(--ink); }
+
+  /* story */
+  .story p { margin-bottom: 14px; color: var(--ink-soft); font-size: 15.5px; max-width: 720px; }
+  .story p strong { color: var(--ink); }
+
+  /* ecosystem */
+  .eco-step { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
+  .eco-step .num { font-size: 13px; font-weight: 800; color: var(--accent); letter-spacing: 1px; }
+  .eco-step h3 { font-size: 16.5px; margin: 8px 0 6px; }
+  .eco-step p { font-size: 14px; color: var(--ink-soft); }
+  .eco-note { margin-top: 22px; text-align: center; font-size: 16px; font-weight: 700; color: var(--ink); }
+
+  /* faq */
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 22px; margin-bottom: 12px; }
+  summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin-top: 10px; color: var(--ink-soft); font-size: 14.5px; }
+
   /* channels */
   .channels { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
   .channel {
@@ -136,8 +162,9 @@
     <a class="brand" href="#top">美惠<span>.</span></a>
     <ul>
       <li><a class="link" href="#services">我能做什么</a></li>
-      <li><a class="link" href="#about">关于我</a></li>
+      <li><a class="link" href="#story">我的路</a></li>
       <li><a class="link" href="#channels">内容阵地</a></li>
+      <li><a class="link" href="#faq">常见问题</a></li>
       <li><a class="link" href="#contact">找我聊聊</a></li>
     </ul>
   </div>
@@ -176,6 +203,40 @@
         <p>帮你用 AI 搭起自己的内容流水线：选题、初稿、排版、分发。产量提上去，声音还是你自己的。</p>
       </div>
     </div>
+
+    <div class="svc-detail">
+      <div class="svc-block">
+        <h3>🏢 企业 AI 落地陪跑</h3>
+        <div class="fit">适合：知道该用 AI、但不知道从哪下手的企业主和部门负责人</div>
+        <ul>
+          <li>一起选出 1-3 个真场景——别贪多，先把最烦的活儿拆掉</li>
+          <li>把流程拆细：哪一步人来判断、哪一步 AI 干，写成清单</li>
+          <li>工具选型和内部规矩：用什么、怎么用、什么不能往上放</li>
+          <li>团队带教：每周一次，拿你们自己的真任务练，练完当场验收</li>
+        </ul>
+        <div class="bottom-line">交付物是清单、流程和一支能自己转起来的团队，不是一份 PPT。</div>
+      </div>
+      <div class="svc-block">
+        <h3>📚 AI 实战课程与工作坊</h3>
+        <div class="fit">适合：想用 AI 提升产出的职场人，和想入行 AI 赛道的朋友</div>
+        <ul>
+          <li>每节课＝一个真场景＋一套动作＋一份拿走就用的模板</li>
+          <li>小班制，人人过一遍手，作业我逐个看</li>
+          <li>下课时带走的是你自己的产出物，不是一页笔记</li>
+        </ul>
+        <div class="bottom-line">听完必须能动手——这是我给所有课定的规矩。</div>
+      </div>
+      <div class="svc-block">
+        <h3>✍️ 内容创作提效</h3>
+        <div class="fit">适合：自己写公众号/小红书/知乎的人，和两三人的小团队</div>
+        <ul>
+          <li>先搭选题库：不用每天现想「今天写什么」</li>
+          <li>再定你的提问模板：AI 出初稿，定稿权永远在你手里</li>
+          <li>最后上排期表：哪天发什么，一眼看清</li>
+        </ul>
+        <div class="bottom-line">产量提上去，声音还是你自己的。</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -197,6 +258,18 @@
         <div class="fact"><b>2 个</b><span>身份：讲师 + 实操创业者</span></div>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="story" class="story">
+  <div class="wrap">
+    <div class="kicker">MY STORY</div>
+    <h2>我怎么走到这儿</h2>
+    <p>我最早不是干这行的。第一段职业在美业，从基层做到管理，带过团队也自己单干过。那段经历留给我的最大财富不是行业知识，是习惯：<strong>凡事先拆步骤，再谈方法。</strong></p>
+    <p>后来 AI 起来了，我拿自己的日常工作当试验田：写方案、备课、做内容，一个环节一个环节地试。试出来的第一个结论很朴素——<strong>AI 不是来替代谁的，它是把「会拆步骤的人」的效率放大了好几倍。</strong></p>
+    <p>所以我教的不是 AI，是拆。把你的活儿拆成一步一格的清单，AI 自然有它的位置。</p>
+    <p>我还是个拆书家——把厚书拆薄、把方法拆细。这个习惯长在了我的每节课里：一节课只拆一个场景，拆到你能上手为止。</p>
+    <p><strong>我的路不复杂，也没什么传奇。就是每一步都自己先走通，再讲给别人听。</strong></p>
   </div>
 </section>
 
@@ -230,6 +303,58 @@
         <a href="https://t.zsxq.com/yjit6" target="_blank" rel="noopener">知识星球：美惠AI实战资产库</a>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="ecosystem">
+  <div class="wrap">
+    <div class="kicker">HOW IT FITS</div>
+    <h2>这些阵地怎么配合</h2>
+    <div class="grid">
+      <div class="eco-step">
+        <div class="num">第 1 步 · 免费看</div>
+        <h3>公众号 / 知乎 / 小红书</h3>
+        <p>观点、判断和方法，先看认不认同我这套打法。搜「美惠ai落地」和「rosey的ai实战笔记」都能找到。</p>
+      </div>
+      <div class="eco-step">
+        <div class="num">第 2 步 · 拿走用</div>
+        <h3>知识星球 · 美惠AI实战资产库</h3>
+        <p>模板、表格、提示词——能下载就能用的成品。省下你自己从零摸索的时间。</p>
+      </div>
+      <div class="eco-step">
+        <div class="num">第 3 步 · 一起干</div>
+        <h3>工作坊 / 企业陪跑</h3>
+        <p>定制加陪跑，把东西真正落到你的业务里。前两步觉得对味了，再走这一步。</p>
+      </div>
+    </div>
+    <div class="eco-note">观点免费看，成品拿走用，想动真格的来工作坊。</div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="kicker">FAQ</div>
+    <h2>常见问题</h2>
+    <details>
+      <summary>不懂技术、不会编程，能学吗？</summary>
+      <p>能。课上用的都是对话和现成工具，会打字、会用微信就能跟上。技术层面的活儿，是企业陪跑时我来操心的，不用你碰。</p>
+    </details>
+    <details>
+      <summary>我该从哪开始？</summary>
+      <p>先想一个你最烦的重复活儿——写周报、回客服、整理表格都行。带来课上，我们当场把它拆成清单，看哪几步 AI 能接。</p>
+    </details>
+    <details>
+      <summary>和网上免费教程有什么区别？</summary>
+      <p>免费教程告诉你「AI 是什么」，我给你「你的活儿具体怎么干」。每节课结束你手里都有自己的产出物，不是一页收藏了不会再看的笔记。</p>
+    </details>
+    <details>
+      <summary>企业落地大概要多久？</summary>
+      <p>看场景。小场景一周能跑起来，大流程按月推进。我不承诺「几天见效」——我只保证每次复盘有完成情况的准数，进度看得见。</p>
+    </details>
+    <details>
+      <summary>费用怎么算？</summary>
+      <p>课程按期报名，企业陪跑按月。具体情况不一样，加微信聊（二维码在下面），说清你的情况，我给你个实在的判断。</p>
+    </details>
   </div>
 </section>
 
