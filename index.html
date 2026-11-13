@@ -164,6 +164,21 @@
   .ws-item .date { font-size: 13px; font-weight: 800; color: var(--accent); letter-spacing: 1px; }
   .ws-item h3 { font-size: 16.5px; margin: 8px 0 6px; }
   .ws-item p { font-size: 13.5px; color: var(--ink-soft); }
+  /* workshop long copy */
+  .ws-copy p { font-size: 14.5px; color: var(--ink-soft); margin-bottom: 10px; }
+  .ws-copy p.lead { font-size: 15.5px; color: var(--accent); font-weight: 600; margin-bottom: 14px; }
+  .ws-copy .sub-h { font-size: 14px; font-weight: 700; color: var(--ink); margin: 18px 0 6px; }
+  .ws-copy ul { list-style: none; margin: 0 0 12px; }
+  .ws-copy li { padding: 3px 0 3px 18px; position: relative; font-size: 14px; color: var(--ink-soft); }
+  .ws-copy li::before { content: "·"; position: absolute; left: 4px; color: var(--accent); font-weight: 800; }
+  .ws-copy .meta-line { font-size: 13.5px; color: var(--ink-soft); border-top: 1px dashed var(--line); margin-top: 16px; padding-top: 12px; margin-bottom: 0; }
+  .ws-copy .cta-line { font-size: 14.5px; color: var(--ink); font-weight: 600; margin-top: 16px; }
+  .ws-fold { margin-bottom: 24px; }
+  details.ws-term { margin-bottom: 12px; }
+  details.ws-term .ws-copy { margin-top: 14px; }
+  .ws-bundle { background: #f1f5f4; border: 1px solid var(--line); border-radius: 14px; padding: 28px; }
+  .ws-bundle h3 { font-size: 18px; margin-bottom: 12px; }
+  .ws-bundle .btn { margin-top: 18px; }
 
   /* faq */
   details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 22px; margin-bottom: 12px; }
@@ -464,37 +479,159 @@
 
     <div class="ws-hero">
       <span class="badge">报名中 · 限 15 人</span>
-      <h3>AI 内容启动工作坊 · 第一期</h3>
+      <h3>第一期：AI内容启动工作坊</h3>
       <div class="ws-meta-top">
         <span>11 月 15 日（周六）14:30–17:00</span>
         <span>📍 广州市天河区越星路 174 号</span>
         <span>💰 39 元/人</span>
       </div>
-      <div class="hookline">从「不知道写什么」到「一条能发的内容」，现场跑通。你带着一个模糊的念头来，走的时候带走：</div>
-      <div class="ws-take">
-        <div class="item"><b>一套方法</b><span>采访式内容挖掘法</span></div>
-        <div class="item"><b>一条成品</b><span>从种子 → 采访 → 整理 → 去 AI 味 → 成稿</span></div>
-        <div class="item"><b>一张卡片</b><span>正反两面提示词卡，回家自己跑</span></div>
-        <div class="item"><b>素材库起点</b><span>今天挖出的细节，是你未来 30 条内容的弹药</span></div>
+      <div class="ws-copy">
+        <p class="lead">从“不知道写什么”，到当天发出一条属于你的内容</p>
+        <p>很多人不是不会写，而是不知道写什么。</p>
+        <p>打开编辑器，脑子一片空白；想发朋友圈，又怕显得太广告；想做视频号，但连第一条文案都憋不出来。最后的结果往往是：收藏了一堆教程，关注了一堆账号，自己却一直没有开始。</p>
+        <p>第一期工作坊，解决的就是“从0到1”的问题。</p>
+        <p>我们不讲复杂的AI原理，也不让你背指令。现场会用一套简单的采访式方法，帮你把个人经历、专业经验、产品理解、客户问题，变成可以发布的内容。你会在AI辅助下，完成从定位、选题、成稿、去AI味到发布的全流程。</p>
+        <div class="sub-h">这一期结束后，你会带走：</div>
+        <ul>
+          <li>一张个人内容定位卡</li>
+          <li>一条当天就能发布的内容</li>
+          <li>一套“不知道写什么时”的启动方法</li>
+          <li>一个可以继续扩展的选题方向</li>
+        </ul>
+        <div class="sub-h">适合谁：</div>
+        <ul>
+          <li>想做个人IP，但一直没开始的人</li>
+          <li>有产品或服务，但不知道内容怎么写的人</li>
+          <li>想发朋友圈、公众号、视频号，却经常卡在第一句的人</li>
+          <li>用过AI，但只会让它“随便写写”的人</li>
+        </ul>
+        <div class="sub-h">不适合谁：</div>
+        <ul>
+          <li>想学AI底层技术的人</li>
+          <li>想做技术开发、模型训练的人</li>
+          <li>只想听理论、不想现场动手的人</li>
+        </ul>
+        <p class="meta-line">工作坊时长：150分钟<br>形式：线下小班，现场实操，带走成果<br>价格：单期399元 / 4期全套999元</p>
+        <p class="cta-line">如果你已经拖了很久，迟迟没有发出第一条内容，这一期就是为你准备的。<br>报名第一期，当天带走一条能发的内容。</p>
       </div>
-      <div class="ws-who">适合：想做自媒体但不知道写什么；写了发不出去、总觉得没料；用了 AI、一眼 AI 味；有真实经历但不会变成内容的人。<span class="no">不适合：只想听别人讲、不想动笔的人。</span></div>
       <a class="btn btn-primary" href="#contact">→ 扫码加微信，备注「工作坊」占位</a>
     </div>
 
-    <div class="ws-list">
-      <div class="ws-item">
-        <div class="date">11 月 29 日（周六）</div>
-        <h3>AI 内容启动工作坊 · 第二期</h3>
-        <p>一期没赶上的，这期补上。</p>
+    <div class="ws-fold">
+      <details class="ws-term">
+        <summary>第二期：AI内容持续生产工作坊 · 11 月 29 日（周六）</summary>
+        <div class="ws-copy">
+          <p class="lead">从“偶尔发一条”，到拥有稳定更新的内容产线</p>
+          <p>很多人都有过这样的经历：灵感来了，一口气写三条；忙了几天，又断更半个月。</p>
+          <p>内容最难的不是写出一条，而是持续写下去。没有选题库，没有发布节奏，没有复用机制，最后很容易变成“想起来就发，想不起来就停”。</p>
+          <p>第二期工作坊，解决的是“持续生产”的问题。</p>
+          <p>我们会帮你把第一期的单条内容，升级成一个可以长期运转的内容系统。你会学会如何从客户问题、日常观察、产品场景、过往经验中不断挖选题；也会学会如何让一条内容变成多条内容，让一次表达反复发挥作用。</p>
+          <div class="sub-h">这一期结束后，你会带走：</div>
+          <ul>
+            <li>一个个人专属选题库</li>
+            <li>一套内容复用方法</li>
+            <li>一份7天发布计划</li>
+            <li>一个不再依赖灵感的持续生产流程</li>
+          </ul>
+          <div class="sub-h">适合谁：</div>
+          <ul>
+            <li>偶尔能发内容，但很难坚持的人</li>
+            <li>每次都要重新想选题的人</li>
+            <li>发了几条就断更的人</li>
+            <li>想做视频号、公众号、朋友圈矩阵，但产能跟不上的人</li>
+          </ul>
+          <div class="sub-h">不适合谁：</div>
+          <ul>
+            <li>还没有发出过任何内容，却只想囤方法的人</li>
+            <li>不愿意整理自己经验和产品的人</li>
+          </ul>
+          <p class="meta-line">工作坊时长：150分钟<br>形式：线下小班，现场实操，带走成果<br>价格：单期399元 / 4期全套999元</p>
+          <p class="cta-line">内容不是靠灵感维持的，而是靠系统持续运转的。<br>报名第二期，带走你的选题库和7天发布计划。</p>
+        </div>
+      </details>
+
+      <details class="ws-term">
+        <summary>第三期：AI内容转化工作坊 · 12 月 6 日（周六）</summary>
+        <div class="ws-copy">
+          <p class="lead">从“发了没人理”，到让内容连接到咨询和成交</p>
+          <p>内容发出去之后，最让人焦虑的不是没人点赞，而是没有咨询、没有转化。</p>
+          <p>很多人以为内容做得不够好，其实问题往往不在文笔，而在路径：没有清楚的产品表达，没有自然的收口设计，也不知道别人私信时该怎么回应。结果就是内容一直在发，生意却没有被带动。</p>
+          <p>第三期工作坊，解决的是“内容如何带来结果”的问题。</p>
+          <p>我们不追求爆款，而是帮你把每一条内容都变成一次有效沟通。你会学会如何把自己的产品、服务、课程、咨询讲得更清楚；如何设计自然的行动号召；如何把朋友圈、视频号、私信连接成一个完整的转化路径。</p>
+          <div class="sub-h">这一期结束后，你会带走：</div>
+          <ul>
+            <li>一套清晰的产品表达</li>
+            <li>一个内容收口设计</li>
+            <li>一套私信回应模板</li>
+            <li>一条从内容到咨询的转化路径</li>
+            <li>一份7天转化行动计划</li>
+          </ul>
+          <div class="sub-h">适合谁：</div>
+          <ul>
+            <li>发了很多内容，但咨询很少的人</li>
+            <li>有产品或服务，但不知道如何在内容里讲清楚的人</li>
+            <li>想做私域转化的人</li>
+            <li>希望内容不只是“被看到”，而是能带来咨询和成交的人</li>
+          </ul>
+          <div class="sub-h">不适合谁：</div>
+          <ul>
+            <li>还没有任何产品、服务或可交付内容的人</li>
+            <li>只想学流量技巧，不想梳理产品的人</li>
+          </ul>
+          <p class="meta-line">工作坊时长：150分钟<br>形式：线下小班，现场实操，带走成果<br>价格：单期399元 / 4期全套999元</p>
+          <p class="cta-line">内容的终点不是发布，而是连接。<br>报名第三期，让你的内容开始带来咨询。</p>
+        </div>
+      </details>
+
+      <details class="ws-term">
+        <summary>第四期：AI视频批量生产工作坊 · 12 月 24 日（周三）</summary>
+        <div class="ws-copy">
+          <p class="lead">从“想做视频但太慢”，到脚本、配音、出片、批量生产</p>
+          <p>文字内容能写了，很多人又会卡在视频上。</p>
+          <p>不想出镜、背不下来台词、拍摄太麻烦、剪辑太耗时、做一条视频要花两三个小时。结果就是知道视频很重要，却迟迟做不出来；即使做出来，也很难持续更新。</p>
+          <p>第四期工作坊，解决的是“视频生产效率”的问题。</p>
+          <p>我们会带你从已有文字内容出发，完成从脚本、配音、数字分身、数字人到自动出片的完整流程。你不需要变成专业剪辑师，也不需要追求电影级画面。重点是建立一条属于自己的视频生产流水线：一次准备多条脚本，批量生成多条视频，稳定发布到视频号、抖音、小红书等平台。</p>
+          <div class="sub-h">这一期结束后，你会带走：</div>
+          <ul>
+            <li>一条从文字转成的短视频脚本</li>
+            <li>一套不出镜也能做视频的方案</li>
+            <li>一条现场生成的视频成品</li>
+            <li>一个可复用的批量出片流程</li>
+            <li>一份7天视频发布计划</li>
+          </ul>
+          <div class="sub-h">适合谁：</div>
+          <ul>
+            <li>想做视频号，但一直拖着没开始的人</li>
+            <li>不想出镜、不会拍摄、不会剪辑的人</li>
+            <li>文字内容已经有基础，想升级到视频的人</li>
+            <li>希望视频产能跟上内容节奏的人</li>
+          </ul>
+          <div class="sub-h">不适合谁：</div>
+          <ul>
+            <li>还没有任何内容基础，却想直接批量做视频的人</li>
+            <li>只想学高级剪辑特效的人</li>
+          </ul>
+          <p class="meta-line">工作坊时长：150分钟<br>形式：线下小班，现场实操，带走成果<br>价格：单期399元 / 4期全套999元</p>
+          <p class="cta-line">视频不是门槛，而是放大。<br>报名第四期，现场把你的文字内容变成一条可发布的视频。</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="ws-bundle">
+      <h3>AI内容实战工作坊 · 4期系统课</h3>
+      <div class="ws-copy">
+        <p>如果你希望一次性搭建完整的内容系统，可以选择4期联报。</p>
+        <ul>
+          <li>第一期：解决“不知道写什么”</li>
+          <li>第二期：解决“发完就断”</li>
+          <li>第三期：解决“发了没结果”</li>
+          <li>第四期：解决“做视频太慢”</li>
+        </ul>
+        <p>4期学完，你会拥有一套从选题、成稿、发布、收口、转化到视频批量生产的内容产线。</p>
+        <p class="meta-line">4期全套价格：999元<br>单期价格：399元/期<br>每期限额：15人</p>
+        <p class="cta-line">建议按顺序参加，效果更完整。<br>立即报名，锁定本期席位。</p>
       </div>
-      <div class="ws-item">
-        <div class="date">12 月 6 日（周六）· 预告</div>
-        <h3>AI 自动流水线工作坊</h3>
-      </div>
-      <div class="ws-item">
-        <div class="date">12 月 24 日（周三）· 预告</div>
-        <h3>视频启动工作坊</h3>
-      </div>
+      <a class="btn btn-primary" href="#contact">→ 扫码加微信，备注「工作坊」占位</a>
     </div>
   </div>
 </section>
